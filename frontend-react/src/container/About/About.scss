@@ -1,0 +1,115 @@
+.app__about {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+
+.app__aboutDetails {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0px auto;
+    padding: 2rem 1.5rem;
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    text-align: justify;
+
+    @media screen and (max-width:900px) {
+        flex-direction: column-reverse;
+
+    }
+
+    .button {
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        margin-top: 2rem;
+        text-align: center;
+        transition-duration: 0.15s;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        background: rgb(184, 185, 185);
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(128, 127, 127);
+        border-image: initial;
+        // border-radius: 10px;
+        padding: 12px 20px;
+        text-decoration: none;
+
+        &:hover {
+            color: var(--white-color);
+            background: rgba(0, 0, 0, 0.9);
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(255, 255, 255);
+            border-image: initial;
+        }
+    }
+
+    p {
+        width: 70%;
+
+        @media screen and (max-width:900px) {
+            width: 100%;
+        }
+    }
+
+    img {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+        height: 300px;
+        width: 100%;
+        border-width: 10px;
+        border-style: solid;
+        border-color: rgb(237, 242, 248);
+        // border-color: #f8dedf;
+        border-image: initial;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    span {
+        color: var(--secondary-color);
+        font-family: "Times New Roman", Times, serif;
+        font-size: 38px;
+    }
+}
+
+.app__profiles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.app__profile-item {
+    width: 190px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 2rem;
+
+    img {
+        width: 100%;
+        height: 170px;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+
+    @media screen and (min-width:2000px) {
+        width: 370px;
+        margin: 2rem 4rem;
+
+        img {
+            height: 320px;
+
+        }
+    }
+}
